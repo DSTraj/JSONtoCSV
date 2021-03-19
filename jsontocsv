@@ -1,3 +1,8 @@
+## Anaconda Jupyter python
+## Rajashree Kallapur 2021
+## Converts json file to csv
+## note - header is set to false
+
 import pandas as pd
 df = pd.read_json (r'input.json')
 export_csv = df.to_csv (r'testpd1.csv', index = None, header=False)
