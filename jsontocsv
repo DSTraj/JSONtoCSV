@@ -5,4 +5,5 @@
 
 import pandas as pd
 df = pd.read_json (r'input.json')
-export_csv = df.to_csv (r'testpd1.csv', index = None, header=False)
+df = df.rename(columns={0: "timestamp", 1: "redbuffer", 2: "IRbuffer", 3:"pulse", 4: "SpO2"})
+export_csv = df.to_csv (r'output.csv', index = None)
