@@ -1,0 +1,3 @@
+import pandas as pd
+df = pd.read_json (r'C:\\Users\\Raj\\Documents\\Raj\\AI\\dataset\\d0_81_7a_9f_61_56-1610713176-1610713188.json')
+export_csv = df.to_csv (r'testpd1.csv', index = None, header=False)
